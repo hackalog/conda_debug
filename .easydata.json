@@ -1,0 +1,13 @@
+{
+    "_template": "easydata",
+    "author_name": "Kjell Wooding",
+    "conda_path": "~/anaconda3/bin/conda",
+    "default_branch": "master",
+    "description": "Tools for debugging troublesome conda/pip environments",
+    "module_name": "src",
+    "open_source_license": "MIT",
+    "project_name": "Find Conda Conflicts",
+    "python_version": "3.7",
+    "repo_name": "conda_debug",
+    "upstream_location": "github.com"
+}
