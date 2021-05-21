@@ -17,7 +17,7 @@ endif
 ## Set up virtual (conda) environment for this project
 create_environment: environment.$(ARCH).lock.yml
 ifeq (conda,$(VIRTUALENV))
-	@touch environment.yml
+	@rm -f environment.$(ARCH).lock.yml
 	@echo
 	@echo "New conda env created. Activate with:"
 	@echo ">>> conda activate $(PROJECT_NAME)"
@@ -59,3 +59,5 @@ endif
 else
 	$(error Unsupported Environment `$(VIRTUALENV)`. Use conda)
 endif
+
+nuke_from_orbit: delete_environment create_environment

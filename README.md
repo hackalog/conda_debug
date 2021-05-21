@@ -4,16 +4,19 @@ _Author: Kjell Wooding_
 
 Tools for debugging troublesome conda/pip environments
 
-This repo is build on the easydata template and workflow for making it easy to share your work with others and
-to build on the work of others. This includes:
+* [conda-tree](https://github.com/rvalieris/conda-tree)
+* [conda-depgraph](https://github.com/omegacen/conda-depgraph)
+* Manual code for visualizing, e.g. using graphviz
 
-* managing conda environments in a consistent and reproducible way,
-* built in dataset management (including tracking of licenses),
-* pre-established project structure,
-* workflows and conventions for contributing notebooks and other code.
+e.g.
+>>> conda depgraph in gmp
+(everything that depends on gmp)
+>>> conda-tree whoneeds gmp
+(same)
 
-REQUIREMENTS
-------------
+
+EASYDATA REQUIREMENTS
+---------------------
 * Make
 * conda >= 4.8 (via Anaconda or Miniconda)
 * Git
