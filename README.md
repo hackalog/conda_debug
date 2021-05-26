@@ -9,9 +9,13 @@ Tools for debugging troublesome conda/pip environments
 * Manual code for visualizing, e.g. using graphviz
 
 e.g.
+```
 >>> conda depgraph in gmp
+```
 (everything that depends on gmp)
+```
 >>> conda-tree whoneeds gmp
+```
 (same)
 
 
